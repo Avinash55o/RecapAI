@@ -1,18 +1,9 @@
 # RecapAI
-
-> ## ⚠️ IMPORTANT NOTICE TO THE COMMUNITY ⚠️
 > 
 > **This is a free, open-source initiative - NOT a full-service product!**
 > 
 > There are numerous paid interview preparation tools charging hundreds of dollars for comprehensive features like live audio capture, automated answer generation, and more. This project is fundamentally different:
 > 
-> - This is a **small, non-profit, community-driven project** with zero financial incentive behind it
-> - The entire codebase is freely available for anyone to use, modify, or extend
-> - Want features like voice support? You're welcome to integrate tools like OpenAI's Whisper or other APIs
-> - New features should come through **community contributions** - it's unreasonable to expect a single maintainer to implement premium features for free
-> - The maintainer receives no portfolio benefit, monetary compensation, or recognition for this work
-> 
-> **Before submitting feature requests or expecting personalized support, please understand this project exists purely as a community resource.** If you value what's been created, the best way to show appreciation is by contributing code, documentation, or helping other users.
 
 > ## 🔑 API KEY INFORMATION - UPDATED
 >
