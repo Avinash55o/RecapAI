@@ -34,5 +34,3 @@ project_code_part_*.md
 
 # Setup / Cleanup Scripts not needed in repo
 cleanup-for-github.*
-invisible_launcher.vbs
-launch.vbs

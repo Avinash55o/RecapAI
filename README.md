@@ -105,7 +105,7 @@ Note: The application is **NOT** invisible to:
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/ibttf/recap-ai.git
+git clone https://github.com/Avinash55o/RecapAI.git
 cd recap-ai
 ```
 
@@ -167,13 +167,14 @@ The packaged applications will be available in the `release` directory.
 - Build the application in production mode
 - Launch the application in invisible mode
 
-### Windows Silent Launcher (`launch.vbs`)
+### Alternative: Windows Silent Launcher (`launch.vbs`)
 
-I created a custom VBScript launcher (`launch.vbs`) to provide a completely invisible startup experience on Windows. Here is the thought process and mechanism behind its creation:
+Instead of running `stealth-run.bat`, Windows users can use the `launch.vbs` script for a completely silent, taskbar-free experience. 
 
-1. **VBScript Environment**: It uses the native Windows Script Host (`WScript.Shell`) to execute background commands without spawning visible Command Prompt windows, avoiding taskbar icons.
-2. **First-Run Build Detection**: It leverages the `Scripting.FileSystemObject` to automatically check if `dist-electron/main.js` and `dist/index.html` exist. If they do not, it triggers `npm run build` so the app compiles itself automatically upon the user's first click.
-3. **Silent Execution**: Once successfully built, it executes `npm run run-prod` with the hidden window style parameter set to `0`, successfully starting the background Electron application entirely invisibly.
+**How to use it:**
+1. Just double-click on `launch.vbs` in your file explorer.
+2. **First Time Set-up**: On your very first run, it will detect that the app hasn't been built yet. It will automatically open a quick terminal to run `npm run build` and compile the app for your computer. 
+3. **Invisible Launch**: Once finished (or on subsequent launches where the app is already built), it will launch the Electron application 100% invisibly in the background without spawning any Command Prompt windows or taskbar icons.
 
 ### Notes & Troubleshooting
 
